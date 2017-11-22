@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css">
 <script src="ckeditor/ckeditor.js"></script>
 <h2 class="my-3">編輯文章</h2>
-<form action="admin.php" method="post" enctype="multipart/form-data">
+<form action="admin.php" id="myform" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="title" class="col-form-label sr-only">文章標題</label>
         <input type="text" name="title" id="title" class="form-control validate[required, minSize[4], maxSize[50]]" placeholder="請輸入文章標題" {if $article.title}value="{$article.title}"{/if}>
